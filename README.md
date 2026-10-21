@@ -1,0 +1,1 @@
+# collectorhub-cypress-automation
