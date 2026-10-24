@@ -7,5 +7,9 @@ module.exports = defineConfig({
     supportFile: false,
     defaultCommandTimeout: 30000,
     pageLoadTimeout: 60000,
+    retries: {
+      runMode: 2,
+      openMode: 0,
+    },
   },
 });
