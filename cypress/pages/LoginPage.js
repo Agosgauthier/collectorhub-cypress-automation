@@ -14,6 +14,10 @@ class LoginPage {
     return cy.contains('button[type="submit"]', 'Iniciar sesión');
   }
 
+  get errorMessage() {
+    return cy.get('p.text-red-600');
+  }
+
   // Actions
   visit() {
     cy.visit('/login');

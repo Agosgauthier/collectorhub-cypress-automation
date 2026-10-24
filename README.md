@@ -1,4 +1,4 @@
-.# collectorhub-cypress-automation
+# collectorhub-cypress-automation
 
 Tests automatizados (Cypress + Page Object Model) de CollectorHub.
 
@@ -28,8 +28,9 @@ npm test
 Modo visual (opcional): npx cypress open
 
 ## Autores
-| POM | Autor |
-|---|---|
-| LoginPage | (nombre) |
-| FeedPage | (nombre) |
-| (tercero) | (nombre) |
+| POM       | Autor    |
+|-----------|----------|
+| LoginPage | Agostina |
+| FeedPage  | Agostina |
+| LoginPage | Agostina |
+| (-------) | (-------)|
