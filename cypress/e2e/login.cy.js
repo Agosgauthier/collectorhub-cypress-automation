@@ -1,3 +1,4 @@
+
 const LoginPage = require('../pages/LoginPage');
 
 describe('Login', () => {
@@ -15,5 +16,16 @@ describe('Login', () => {
 
     cy.url().should('include', '/login');
     loginPage.errorMessage.should('be.visible');
+  });
+
+  it('does not allow login with empty fields', () => {
+    const loginPage = new LoginPage().visit();
+
+    loginPage.submitButton.click();
+
+    loginPage.emailInput.should('match', ':invalid');
+    loginPage.passwordInput.should('match', ':invalid');
+
+    cy.url().should('include', '/login');
   });
 });
