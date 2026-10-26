@@ -28,9 +28,9 @@ npm test
 Modo visual (opcional): npx cypress open
 
 ## Autores
-| POM       | Autor    |
-|-----------|----------|
-| LoginPage | Agostina |
-| FeedPage  | Agostina |
-| LoginPage | Agostina |
-| (-------) | (-------)|
+| POM            | Autor          |
+|----------------|----------------|
+| LoginPage      | Agostina       |
+| FeedPage       | Agostina       |
+| CreatePostPage | Agostina       |
+| (-------)      | (-------)      |
