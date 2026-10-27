@@ -34,6 +34,18 @@ npm test
 
 Modo visual (opcional): npx cypress open
 
+### Pruebas de Notificaciones (PowerShell)
+
+Desde la raíz del repositorio, ejecutar:
+
+```powershell
+.\scripts\notifications-e2e.ps1 -Mode Run
+```
+
+Estas pruebas utilizan una base MongoDB aislada llamada `coleccionistas_e2e`. Requieren PHP, Node.js, MongoDB y las dependencias del proyecto disponibles, y preparan y limpian sus propios datos de prueba.
+
+Consultar [docs/notifications-testing.md](docs/notifications-testing.md) para conocer los requisitos y procedimientos detallados.
+
 ## Autores
 
 | POM                | Autor    |
@@ -46,3 +58,4 @@ Modo visual (opcional): npx cypress open
 | EditProfilePage    | Olaf     |
 | ForgotPasswordPage | Olaf     |
 | MarketplacePage    | Fabrizio |
+| NotificationsPage  | Over Caivano |
