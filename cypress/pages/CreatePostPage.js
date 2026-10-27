@@ -3,19 +3,27 @@ const FeedPage = require('./FeedPage');
 class CreatePostPage {
   // Locators
   get titleInput() {
-    return cy.get('input[placeholder^="Ej: Moneda de 1 peso"]');
+    return cy.get('[data-testid="create-post-title"]');
   }
 
   get publishButton() {
-    return cy.contains('button[type="submit"]', /Publicar|Publicando/);
+    return cy.get('[data-testid="create-post-submit"]');
   }
-  
+
   get successMessage() {
-    return cy.contains('Publicación creada correctamente', { timeout: 15000 });
-   }
+    return cy.contains('Publicación creada correctamente', {
+      timeout: 15000,
+    });
+  }
 
   categoryButton(label) {
-    return cy.contains('button[type="button"]', label);
+    const categoryIds = {
+      Monedas: 'coins',
+    };
+
+    const categoryId = categoryIds[label] || label;
+
+    return cy.get(`[data-testid="create-post-category-${categoryId}"]`);
   }
 
   // Actions
