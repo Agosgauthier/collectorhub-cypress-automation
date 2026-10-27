@@ -45,3 +45,4 @@ Modo visual (opcional): npx cypress open
 | ProfilePage        | Olaf     |
 | EditProfilePage    | Olaf     |
 | ForgotPasswordPage | Olaf     |
+| MarketplacePage    | Fabrizio |

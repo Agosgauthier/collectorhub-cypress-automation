@@ -4,15 +4,15 @@ const FeedPage = require('./FeedPage');
 class LoginPage {
   // Locators
   get emailInput() {
-    return cy.get('[data-testid="login-email"]');
+    return cy.get('#email');
   }
 
   get passwordInput() {
-    return cy.get('[data-testid="login-password"]');
+    return cy.get('#password');
   }
 
   get submitButton() {
-    return cy.get('[data-testid="login-submit"]');
+    return cy.get('button[type="submit"]');
   }
 
   get errorMessage() {
