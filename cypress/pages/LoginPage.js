@@ -1,17 +1,18 @@
+
 const FeedPage = require('./FeedPage');
 
 class LoginPage {
   // Locators
   get emailInput() {
-    return cy.get('#email');
+    return cy.get('[data-testid="login-email"]');
   }
 
   get passwordInput() {
-    return cy.get('#password');
+    return cy.get('[data-testid="login-password"]');
   }
 
   get submitButton() {
-    return cy.contains('button[type="submit"]', 'Iniciar sesión');
+    return cy.get('[data-testid="login-submit"]');
   }
 
   get errorMessage() {

@@ -1,23 +1,24 @@
+
 class FeedPage {
   // Locators
   get posts() {
-    return cy.get('div[id^="post-"]');
+    return cy.get('[data-testid="feed-post"]');
   }
 
   get postTitles() {
-    return this.posts.find('a[href^="/posts/"] h2');
+    return this.posts.find('[data-testid="post-title"]');
   }
 
   get postImages() {
-    return this.posts.find('a[href^="/posts/"] img');
+    return this.posts.find('[data-testid="post-image"]');
   }
 
   get postDescriptions() {
-    return this.posts.find('p');
+    return this.posts.find('[data-testid="post-description"]');
   }
 
   get commentButtons() {
-    return this.posts.find('button:has(svg.lucide-message-circle)');
+    return this.posts.find('[data-testid="post-comments-button"]');
   }
 
   // Actions
